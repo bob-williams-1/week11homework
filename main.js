@@ -22,7 +22,6 @@ var checkForLetter = require('./word.js');
 var lettersToDisplay = require('./letter.js');
 
 
-
 // ----------------------------- Global Variables -----------------------------
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var lettersAlreadyGuessed = [];
@@ -40,7 +39,6 @@ var game = {
   guessesRemaining : 10, // per word
   currentWrd : null, // the word object
 
-
   startGame : function(){
     // make sure the user has 10 guesses
     this.guessesRemaining = 10;
@@ -55,7 +53,7 @@ var game = {
     // Show the empty letters ( _ _ _ _ ) and guesses, etc.
     displayHangman = new lettersToDisplay(this.currentWrd);
     displayHangman.parseDisplay();
-    console.log('Guesses Left: ' + game.guessesRemaining);
+    console.log('Guesses still Left: ' + game.guessesRemaining);
 
     // prompt for a letter
     keepPromptingUser();
