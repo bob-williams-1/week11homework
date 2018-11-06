@@ -1,7 +1,5 @@
 
 
-// Constructor File
-// letter.js should control whether or not a letter appears as a "_" or as itself on-screen.
 
 
 
@@ -36,11 +34,7 @@ var lettersToDisplay = function(word, goodGuesses){
         // To determine whether a _ is needed
         var letterWasFound = false;
 
-        for(var j = 0; j < this.goodLetters.length; j++){
-          // If yes the letter
-          if(this.gameWord[i] == this.goodLetters[j]){
-            shown += this.goodLetters[j];
-            letterWasFound = true;
+
           }
         }
         // If nothing was found
@@ -50,9 +44,7 @@ var lettersToDisplay = function(word, goodGuesses){
       }
     }
 
-    // Remove first/last space and console log
-    this.displayText = shown.trim();
-    console.log(this.displayText);
+
 
     // Check to see if the game was won (user display equals the word; ie no '_' marks)
     if(this.displayText == this.gameWord){
