@@ -1,13 +1,12 @@
 
 
-// Your game.js file will randomly select a word for the player.
+// Your game.js file will randomly select a nerdy word for the player.
 
 
 // Create a list of words
 var listOfWords = [
   'levetin',
-  'bootcamp',
-  'nerdworld',
+  'hack',
   'ajax',
   'node',
   'ruby',

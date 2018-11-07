@@ -24,7 +24,7 @@ var displayHangman;
 
 var game = {
 
-  wordBank : guessWordList, // import a list of words
+  wordBank : guessWordList, // import a list 
   guessesRemaining : 10, // per word
   currentWrd : null, // the word object
 
@@ -37,7 +37,7 @@ var game = {
     this.currentWrd = this.wordBank[j];
 
     // Inform User game has begun
-    console.log('Figure out the Programming Language. Do you have what it takes?');
+    console.log('Figure out the nerdy word. Do you have what it takes?');
 
     displayHangman = new lettersToDisplay(this.currentWrd);
     displayHangman.parseDisplay();
