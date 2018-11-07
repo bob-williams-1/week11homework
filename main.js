@@ -24,7 +24,7 @@ var displayHangman;
 
 var game = {
 
-  wordBank : guessWordList, // import a list 
+  wordBank : guessWordList, // import list 
   guessesRemaining : 10, // per word
   currentWrd : null, // the word object
 
